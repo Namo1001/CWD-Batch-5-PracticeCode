@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <div class="card-panel teal lighten-2"></div>
+      <title>Namo, Joshua Miguel</title>
+    </head>
+
+    <nav><div class="nav-wrapper">
+        <a href="#" class="brand-logo">MOTIVATIONAL QUOTES ABOUT LIFE</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">HOME</a></li>
+          <li><a href="badges.html">CONTACTS</a></li>
+          <li><a href="collapsible.html">ABOUT US</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">HELP<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+      
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">LINKS</a></li>
+        <li><a href="#!">LICENCE</a></li>
+        <li><a href="#!">SETTINGS</a></li>
+      </ul>
+    </nav>
+
+      <!-- SideNav Structure -->
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="Images/aurora.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="Images/Beam Beam.jpg"></a>
+        <a href="#name"><span class="white-text name">Joshua Miguel Namo</span></a>
+        <a href="#email"><span class="white-text email">joshuamiguelnamo@gmail.com</span></a>
+      </div></li>
+      <li><a class="teal-text">About Me</a></li>
+      <li><a href="#!"><i class="material-icons">account_circle</i>Lifestyle</a></li>
+      <li><a href="#!"><i class="material-icons">work</i>Work</a></li>
+      <li><a href="#!"><i class="material-icons">school</i>Education</a></li>
+      <li><a href="#!"><i class="material-icons">language</i>Travel</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="blue-text">Follow Me</a></li>
+      <li><a class="waves-effect" href="">Facebook</a></li>
+      <li><a class="waves-effect" href="">Twitter</a></li>
+      <li><a class="waves-effect" href="">Instagram</a></li>
+      <li><a class="waves-effect" href="">Youtube</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <body>
+      <body class="grey" style="text-align: center button;"></body>
+      <div class="container"></div>
+      <!-- header -->
+      <h1 class="brown-text text-lighten" style="text-align: center">MOTIVATIONAL QUOTES</h1>
+      <!-- blockquote -->
+      <h5 class=" brown-text text-lightten"style="text-align: center">Motivation reflects something unique about each one of us and allows us to gain valued outcomes like improved performance, enhanced wellbeing, personal growth, or a sense of purpose. Motivation is a pathway to change our way of thinking, feeling, and behaving.</h5>
+      <blockquote> A major function of leaders is to support the motivation of other individuals and groups. (There is debate as to whether a person can motivate another versus whether a person can only support another to motivate themselves.) There are approaches to motivating people that are destructive, for example, fear and intimidation. While these approaches can seem very effective in promptly motivating people, the approaches are hurtful, and in addition, they usually only motivate for the short-term. There are also approaches that are constructive, for example, effective delegation and coaching. These constructive approaches can be very effective in motivating others and for long periods of time. Different people can have quite different motivators, for example, by more money, more recognition, time off from work, promotions, opportunities for learning, or opportunities for socializing and relationships. Therefore, when attempting to help motivate people, it’s important to identify what motivates each of them. Ultimately, though, long-term motivation comes from people motivating themselves.</blockquote>
+      <!-- buttons -->
+      <i><button class="btn pink waves-effect waves-light" type="submit" name="action">Motivate Others
+        <i class="material-icons right">send</i>
+        <link href="https://www.facebook.com/joshuamiguelnamo" rel="stylesheet">
+    </button><br>
+
+    <br><button class="btn pink waves-effect waves-light" type="submit" name="action">Motivate Yourself
+        <i class="material-icons right">send</i>
+        <link href="https://www.facebook.com/joshuamiguelnamo" rel="stylesheet">
+    </button> </i>
+      
+<!-- floating action button -->
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+  </ul>
+</div>
+<!-- Floating Action Script -->
+<script>document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems, screenLeft);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});</script>   
+  
+<!-- Dropdown Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, {direction: 'bottom'});
+        });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, screenLeft);
+      });
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+      $('.dropdown-trigger').dropdown();
+      </script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+
+
+      
+    </body>
+  </html>
